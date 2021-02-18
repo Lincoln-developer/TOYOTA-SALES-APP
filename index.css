@@ -1,0 +1,266 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+.main-div {
+    margin: 50px 0 0 0;
+
+}
+/* Applying flex-box-rule to the customer-infor container*/
+.customer-infor {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 0 0 0 15px;
+   background-color: lightsalmon;
+   font-size: 16px;
+}
+/* Applying-flex-box rule to the item-ordering-output*/
+.item-ordering-output {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 0 15px;
+    background-color: lightsalmon;
+    font-size: 16px;
+}
+.form-container {
+    margin: 0 322px 0 150px;
+
+}
+.first-box-container {
+    background-color: rgb(255,94,0,0.4);
+    margin: 8px;
+}
+.second-box-container {
+    background-color: rgb(255,94,0,0.4);
+    margin: 8px;
+}
+.third-box-container {
+    background-color: rgb(255,94,0,0.4);
+    margin: 8px;
+}
+.forth-box-container {
+    background-color: rgb(255,94,0,0.4);
+    margin: 8px;
+}
+#customer-id-input{
+    height: 25px;
+    width: 130px;
+    margin: 0 0 0 12px;
+    margin-bottom: 30px;
+}
+#state-input {
+    height: 25px;
+    width: 100px;
+    margin: 0 0 0 57px;
+}
+#name-input {
+    height: 25px;
+    width: 250px;
+    margin: 0 0 20px 53px;
+}
+#second-box {
+    margin: 0 0 0 15px;
+
+}
+#forth-box {
+    margin: 0 0 0 15px;
+}
+#box-2 {
+    margin: 26px 0 82px 170px;
+
+}
+#box-4 {
+    margin: 0 0 0 137px;
+}
+#id1 {
+    height: 25px;
+    width: 250px;
+    margin: 0 0 25px 10px;
+}
+#id2 {
+    height: 25px;
+    width: 250px;
+    margin: 0 0 25px 15px;
+}
+.big-box {
+    display: flex;
+    flex-direction: row;
+}
+#id3 {
+    height: 25px;
+    width: 100px;
+    margin: 0 0 25px 0;
+}
+#id4 {
+    height: 25px;
+    width: 50px;
+    margin: 0 0 10px 27px;
+}
+#id5 {
+    margin: 0 0 36px 94px;
+}
+.cost-output {
+    display: flex;
+    flex-direction: row;
+}
+.sales-tax-output {
+    display: flex;
+    flex-direction: row;
+}
+.shipping-handling-output {
+    display: flex;
+    flex-direction: row;
+}
+.total-output {
+    display: flex;
+    flex-direction: row;
+    margin: 27px 0 0 0;
+}
+/* Output elements to display computed values*/
+#div1 {
+   height: 25px;
+   width: 175px;
+   margin:0 0 25px 139px;
+   background-color: white;
+   text-align: right; 
+}
+#div2 {
+    height: 25px;
+    width: 175px;
+    margin: 0 0 25px 106px;
+    background-color: white;
+    text-align: right;
+     
+ }
+ #div3 {
+    height: 25px;
+    width: 175px;
+    margin: 0 0 25px 33px;
+    background-color: white;
+    text-align: right; 
+ }
+ #div4 {
+    height: 25px;
+    width: 175px;
+    margin: 0 0 27px 140px;
+    background-color: white;
+    text-align: right;
+ }
+ /* styling Compute, New Order and Exist button */
+ #btn-1 {
+     height: 25px;
+     width: 100px;
+     margin: 2px 0 5px 8px;
+     background-color: rgb(255,94,0,0.4);
+ }
+ #btn-2 {
+    height: 25px;
+    width: 100px;
+    margin: 2px 5px 5px 30px ;
+    background-color: rgb(255,94,0,0.4);
+}
+#btn-3 {
+    height: 25px;
+    width: 100px;
+    margin: 0px 0 45px 458px;
+    background-color: rgb(255,94,0,0.4);
+}
+.alert-section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    background-color: rgb(255,94,0,0.5);
+    display: none;
+}
+#alert-btn-1 {
+    height: 26px;
+    width: 40px;
+    margin: 10px;
+    padding: 5px;
+    margin: 0px 0px 0px 118px;
+    outline: none;
+    background-color: rgb(255, 94, 0, 0.4);
+    border: none;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 1px 1px rgba(70, 26, 0, 0.4);
+}
+#alert-btn-2 {
+    height: 26px;
+    width: 40px;
+    margin: 10px;
+    outline: none;
+    background-color: rgb(255, 94, 0, 0.4);
+    border: none;
+    color: black;
+    box-shadow: 0 0 1px 1px rgba(70, 26, 0, 0.4);
+
+}
+#para {
+    margin: 0px 0px 0px 100px;
+}
+.exitwrd-and-btns {
+    background-color: rgb(255, 121, 44);
+    width: 24%;
+    height: 10%;
+    padding: 5px;
+    margin: 15% 15% 0 38%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(70, 26, 0, 0.4);
+
+}
+.outer-box {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(255, 94, 0, 0.4);
+    display: none;
+}
+.inner-box {
+    background-color: rgb(255, 121, 44);
+    width: 30%;
+    padding: 5px;
+    margin: 16% 30% 0 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(70, 26, 0, 0.4);
+}
+#iconid {
+    color: rgb(46, 17, 0);
+    font-size: 200%;
+    padding: 10px;
+}
+.word-btn {
+    text-align: center;
+    cursor: default;
+}
+#exiting-btn {
+    margin: 20px;
+    background-color: rgb(255, 94, 0, 0.4);
+    height: 35px;
+    width: 70px;
+    outline: none;
+}
+@media (max-width : 1000px) {
+    #btn-3 {
+        margin:  2px 5px 39px 48px;
+    }
+    .form-container {
+        margin: 0 322px 0 150px;
+    }
+}
+@media (max-width :1286px) {
+    #btn-3 {
+        margin: 2px 5px 39px 48px;
+    }
+    .form-container {
+        margin: 0px 322px 0 532px;
+    }
+}
+

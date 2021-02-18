@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Sales Application</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+</head>
+<body>
+       <div class="main-div">
+              <form action="" class="form-container" name="myform" method="POST">
+                     <div class="customer-infor">
+                            <!--========FIRST BOX CONTAINING NAME,ID, STATE AND RETAIL CHECKBOX=========-->
+                         <div class="first-box-container">
+                               <fieldset id="first-box">
+                                      <legend id="customer-infor-box">Customer Information</legend>
+                                            <div class="customer-id">
+                                                           <label for="Customer-id"> Customer ID :</label>
+                                                           <input id="customer-id-input" type="number" name="Customer-id" value="" placeholder="Enter Customer ID">
+                                             </div>
+                                              <div class="user-name">
+                                                           <label for="name"> Name :</label>
+                                                           <input id="name-input" type="text" name="customer-name" value="" placeholder="Enter Your Name Here" >
+                                              </div>
+                                              <div class="user-state">
+                                                           <label for="state">State :</label>
+                                                           <input id="state-input" type="text" name="customer-state" value="" maxlength="3">
+                                                           <input id="checkbox-input" type="checkbox" name="my-checkbox"> 
+                                                           <label for="retail-customer"> Retail Customer </label> 
+                                                 </div>
+                               </fieldset>
+                          </div>
+                          <!--==========END OF FIRST BOX=============-->
+
+                          <!--=====SECOND BOX CONTAINING THE RADIO BUTTONS========-->
+                          <div class="second-box-container">
+                                <fieldset id="second-box">
+                                      <legend id="shipping-box"> Shipping</legend>
+                                         <div class="delivery-mode-1">
+                                                          <input id="box-1" type="radio" name="value" checked>
+                                                          <label for="ups"> UPS </label>
+                                                          <input id="box-2" type="radio" name="value"> 
+                                                          <label for="fred-ex-ground"> Fred Ex Ground  </label>
+                                          </div>
+                                         <div class="delivery-mode-2">
+                                                          <input id="box-3" type="radio" name="value"> 
+                                                          <label for="postal Air">  Postal Air </label>
+                                                          <input id="box-4" type="radio" name="value"> 
+                                                          <label for="fred-ex-air"> Fred Ex Air </label>
+                                         </div>
+                                </fieldset>
+                         </div>
+                         <!--====== END OF SECOND BOX==========-->
+                    </div>
+                    <div class="item-ordering-output">
+                           <!--===THIRD BOX CONTAINING ORDERS,DESCRIPTIONS,PRICE,QUANTITY AND OVERSIZE CHECKBOX==== -->
+                         <div class="third-box-container">
+                              <fieldset id="third-box">
+                                            <legend id="part-ordered-box"> Part Ordered</legend>
+                                                     <div class="part-number-id">
+                                                             <label for="part-ordered"> Part Number :</label>
+                                                             <input id="id1" type="number" name="part-ordered" value="" placeholder="Enter Part Number">
+                                                     </div>
+                                                     <div class="description-input">
+                                                            <label for="description"> Description :</label>
+                                                            <input id="id2" type="text" name="description" value="" placeholder="Enter Part Description">
+                                                     </div>
+                                     <!--=====DISPLAYING PRICE PER PART AND QUANTITY INLINE======-->
+                                         <div class="big-box">
+                                                     <div class="price-per-part">
+                                                             <label for="price-per-part"> Price Per Part :</label>
+                                                            <input id="id3" type="number" name="price-per-part" value="">
+                                                     </div>
+                                                     <div class="quantity-input">
+                                                           <label for="quantity"> Quantity :</label>
+                                                           <input id="id4" type="number" name="quantity" value="">
+                                                     </div>
+                                         </div>
+                                     <!--========END OF INLINE DISPLAY============-->
+                                     <div class="container-size">
+                                         <input id="id5" type="checkbox" name="oversize-container">
+                                         <label for="oversize-container"> Oversize Container ?</label>
+                                     </div>
+                             </fieldset>
+                       </div>
+                       <!--======END OF THIRD BOX========-->
+
+                       <!--=======FORTH BOX WHERE TO DISPLAY COMPUTED VALUES=======-->
+                        <div class="forth-box-container">
+                                   <fieldset id="forth-box">
+                                             <legend> Output </legend>
+                                                      <div class="cost-output">
+                                                              <label for="cost"> Cost :</label>
+                                                              <div id="div1" ></div>
+                                                      </div>
+                                                      <div class="sales-tax-output">
+                                                              <label for="sales-tax"> Sales Tax :</label>
+                                                              <div id="div2"></div>
+                                                      </div>
+                                                      <div class="shipping-handling-output">
+                                                               <label for="shipping & handling"> Shipping & Handling:</label>
+                                                               <div id="div3"></div>
+                                                      </div>
+                                                      <div class="total-output">
+                                                               <label for="output"> Total:</label>
+                                                               <div id="div4"></div>
+                                                      </div>
+                                 </fieldset>
+                          </div>
+                          <!--=======END OF FORTH BOX========-->
+                               <!--=====FOOTER CONTAINING THE BUTTONS===-->
+                          <div class="footer-container">
+                                       <div class="btn-container">
+                                            <button type="button" id="btn-1" onclick="validData ()"> Compute </button>
+                                            <button type="button" id="btn-2" onclick="location.reload()"> New Order </button>
+                                            <button id="btn-3" type="button" onclick="exit ()"> Exit</button>
+                                       </div>
+                          </div>
+                            <!--===END OF FOOTER===-->
+                     </div>
+              </form>
+        <!--=====SYNTAX FOR THE EXIT BUTTON======-->
+              <div class="alert-section" id="myalert">
+                     <div class="exitwrd-and-btns">
+                          <P id="para"> Do you want to exit ? </P>
+                          <a href="" id="alert-btn-1" onclick="self.close ()"> Yes </a>
+                          <button id="alert-btn-2" onclick="pressingNo()"> No </button>
+                     </div>
+              </div>
+          <!--======END OF EXIT BUTTON=======-->
+          <!--======POP UPS FOR DATA VALIDATION======-->
+             <section class="outer-box" id="outer-box">
+                    <div class="inner-box">
+                           <i class="fas fa-exclamation-triangle" id="iconid"></i>
+                           <div class="word-btn">
+                                  <div id="alert"></div>
+                                  <button type="button" id="exiting-btn" onclick="removePopUp()"> Ok </button>
+                           </div>
+                    </div>
+             </section>
+          <!--======END OF POP UP ALERTS=======-->
+       </div>
+    <script src="my-javascript.js"></script>
+</body>
+</html>
